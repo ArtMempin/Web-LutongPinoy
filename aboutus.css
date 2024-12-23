@@ -1,0 +1,159 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #330303;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #660a0a;
+    color: white;
+    text-align:center;
+    padding: 1em 0;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+.logo {
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    position: absolute; 
+    right: 50px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2em;
+    background-color: white;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+section h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+section p {
+    line-height: 1.6;
+    color: #666;
+    font-size: 1.1em;
+    margin: 0 0 1em 0;
+}
+
+/* Button Styles */
+.our-teams-button {
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 16px;
+    background-color: rgb(243, 240, 240);
+    color: rgb(26, 23, 23);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 1px solid #101110;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+/* Categories Styles */
+.categories {
+    margin-bottom: 2em;
+}
+
+.categories h2 {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+/* Style for the Recipe-Previews */
+.Recipe-Previews {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.slider {
+    display: flex;
+    width: 100%;
+    animation: slide 20s linear infinite;
+}
+
+.slider img {
+    width: 100%;
+    max-width: 200px; /* Set the max width for each image */
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    text-decoration-color: white;
+}
+.footer-logo {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    position: absolute; 
+    left: 460px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}

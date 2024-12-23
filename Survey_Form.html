@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>What's Your Favorite?</h1>
+        <p>If You Look, You Cook.</p>
+        <img src="/Proj/Logo_pictures/logologo.jpg" alt="Logo" class="logo">
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="/Proj/Homepage.html">Home</a>
+        <a href="/Proj/AboutUs.html">About Us</a>
+        <a href="/Proj/Recipes_dishes.html">Recipes</a>
+        <a href="/Proj/ContactUs.html">Contact Us</a>
+    </nav> 
+
+    <!-- Main Content -->
+    <section>
+        <h2>SURVEY</h2>
+    </section>
+
+    <!-- Survey Form -->
+    <div class="container">
+        <div class="Survey">
+            <table align="center">
+                <tr>
+                    <td>
+                        <h1>Filipino Recipes</h1>
+                        <form action="" method="post">
+                            <label>Username:</label>
+                            <input type="text" name="username" required>
+                            
+                            <label>What can you say about Filipino Recipes:</label>
+                            <textarea rows="4" cols="50" placeholder="Please share your thoughts..."></textarea>
+
+                            <h3>What is the Popular Filipino Recipe Dish for you?</h3>
+                            <label><input type="radio" name="popular_dish" value="Adobo"> Adobo</label>
+                            <label><input type="radio" name="popular_dish" value="Menudo"> Menudo</label>
+                            <label><input type="radio" name="popular_dish" value="Sinigang"> Sinigang</label>
+                            <label><input type="radio" name="best_dessert" value="Other">Other</label>
+
+                            <h3>What is the Best Filipino Recipe Dessert for you?</h3>
+                            <label><input type="radio" name="best_dessert" value="Fruit Salad"> Fruit Salad</label>
+                            <label><input type="radio" name="best_dessert" value="Champorado"> Champorado</label>
+                            <label><input type="radio" name="best_dessert" value="Puto Bungbong"> Puto Bungbong</label>
+                            <label><input type="radio" name="best_dessert" value="Other">Other</label>
+
+                            <h3>Share us your Fantastic Recipe</h3>
+                            <h3>Upload the image here</h3>
+                            <input type="file" name="fileupload" accept="image/*">
+        
+                            <br><br>
+                            <input type="submit" value="Save" name="save">
+                            <input type="submit" value="Submit" name="submit" onclick="thanks()">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- Back to Homepage Button -->
+    <section>
+        <div style="text-align: right;">
+            <a href="/Proj/index.html" class="back-to-homepage">Back to Homepage</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Delicious Recipes | All rights reserved</p>
+        <p>Developed By: <a href="/Proj/OurTeams.html">Our Teams</a></p>
+        <img src="/Proj/Logo_pictures/logologo.jpg" alt="Logo" class="footer-logo">
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
